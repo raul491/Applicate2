@@ -39,11 +39,15 @@ public class HomeActivity extends FragmentActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        this.setContentView(R.layout.activity_home);
+        this.setContentView(R.layout.fragment_fragment_login);
 
+
+    }
+
+    public void test() {
         // Add each fragment to our list.
-        this._fragments.add(FRAGMENT_EXAMPLE, new Fragment1());
-        this._fragments.add(FRAGMENT_EXAMPLE2, new Fragment_2());
+        this._fragments.add(new Fragment1());
+        this._fragments.add(new Fragment_2());
 
         // Setup the fragments, defining the number of fragments, the screens and titles.
         this._fragmentPagerAdapter = new FragmentPagerAdapter(this.getSupportFragmentManager()){
@@ -59,7 +63,7 @@ public class HomeActivity extends FragmentActivity {
             public CharSequence getPageTitle(final int position) {
                 // Define titles for each fragment.
                 switch (position) {
-                    case FRAGMENT_EXAMPLE:
+                    case 0:
                         return "Example title";
                     default:
                         return null;
@@ -67,14 +71,13 @@ public class HomeActivity extends FragmentActivity {
             }
         };
 
-        //this._viewPager = (ViewPager) this.findViewById(R.id.pager);
-        //this._viewPager.setAdapter(this._fragmentPagerAdapter);
-
+        this._viewPager = (ViewPager) this.findViewById(R.id.pager1);
+        this._viewPager.setAdapter(this._fragmentPagerAdapter);
+        this._viewPager.setCurrentItem(0);
         // Set the default fragment.
-        this.openFragment(FRAGMENT_EXAMPLE);
+        this.openFragment(0);
 
     }
-
     /**
      * Open the specified fragment.
      * @param fragment
