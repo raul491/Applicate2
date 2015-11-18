@@ -9,7 +9,7 @@
         android:id="@+id/header"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#ff00ff"
+        android:background="#00FF00"
         android:orientation="horizontal">
 
         <ImageView
@@ -27,25 +27,16 @@
             android:text="@string/nom"
             android:textSize="40sp" />
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
+
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:layout_gravity="center"
+                android:layout_width="54dp"
+                android:layout_height="40dp"
                 android:contentDescription="check_assist"
-                android:src="@drawable/checkok"/>
+                android:src="@drawable/checkok"
+                android:layout_weight="0.43" />
 
-            <TextView
-                android:layout_width="wrap_content"
-
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
 
 
     </LinearLayout>
