@@ -6,13 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Fragment1 extends Fragment implements View.OnClickListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -23,6 +23,7 @@ public class Fragment1 extends Fragment implements View.OnClickListener {
 
         Button button= (Button) rootView.findViewById(R.id.button1);
         button.setOnClickListener(this);
+
         return rootView;
     }
 
@@ -30,8 +31,16 @@ public class Fragment1 extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         int idV=v.getId();
 
+        if (idV == R.id.button1) {
+            Toast.makeText(getContext(), "PROVA", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(getContext(), "PROVA2", Toast.LENGTH_LONG).show();
+        }
+
+
+
         switch (idV){
-            case 0:
+            case R.id.button1:
 
                 break;
         }

@@ -6,94 +6,69 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeActivity extends FragmentActivity {
-    /**
-     * Identifier for the example fragment.
-     */
-    public static final int FRAGMENT_EXAMPLE = 1;
-    public static final int FRAGMENT_EXAMPLE2 = 2;
+public class HomeActivity extends FragmentActivity implements View.OnClickListener {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
 
-    /**
-     * The adapter definition of the fragments.
-     */
-    private FragmentPagerAdapter _fragmentPagerAdapter;
+        // Check that the activity is using the layout version with
+        // the fragment_container FrameLayout
+        if (findViewById(R.id.fragment_container) != null) {
 
-    /**
-     * The ViewPager that hosts the section contents.
-     */
-    private ViewPager _viewPager;
+            // However, if we're being restored from a previous state,
+            // then we don't need to do anything and should return or else
+            // we could end up with overlapping fragments.
+            if (savedInstanceState != null) {
+                return;
+            }
 
-    /**
-     * List of fragments.
-     */
-    private List<Fragment> _fragments = new ArrayList<Fragment>();
+            // Create a new Fragment to be placed in the activity layout
+            Fragment firstFragment = new Fragment1();
+
+            // In case this activity was started with special instructions from an
+            // Intent, pass the Intent's extras to the fragment as arguments
+            //firstFragment.setArguments(getIntent().getExtras());
+
+            // Add the fragment to the 'fragment_container' FrameLayout
+            getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, firstFragment).commit();
+        }
+        //View rootView2 = View.inflate(this,R.layout.fragment_fragment1, )
+
+
+
+        //Button button= (Button) findViewById(R.id.button1);
+        //button.setOnClickListener(this);
+    }
 
     @Override
-    protected void onCreate(final Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onClick(View v) {
+        int idV=v.getId();
 
-        this.setContentView(R.layout.fragment_fragment_login);
+        if (idV == R.id.button1) {
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();;
 
+            Fragment newFragment = new Fragment_2();
 
+// Replace whatever is in the fragment_container view with this fragment,
+// and add the transaction to the back stack so the user can navigate back
+            transaction.replace(R.id.fragment_container, newFragment);
+            transaction.addToBackStack(null);
+
+// Commit the transaction
+            transaction.commit();
+        }
     }
-
-    public void test() {
-        // Add each fragment to our list.
-        this._fragments.add(new Fragment1());
-        this._fragments.add(new Fragment_2());
-
-        // Setup the fragments, defining the number of fragments, the screens and titles.
-        this._fragmentPagerAdapter = new FragmentPagerAdapter(this.getSupportFragmentManager()){
-            @Override
-            public int getCount() {
-                return HomeActivity.this._fragments.size();
-            }
-            @Override
-            public Fragment getItem(final int position) {
-                return HomeActivity.this._fragments.get(position);
-            }
-            @Override
-            public CharSequence getPageTitle(final int position) {
-                // Define titles for each fragment.
-                switch (position) {
-                    case 0:
-                        return "Example title";
-                    default:
-                        return null;
-                }
-            }
-        };
-
-        this._viewPager = (ViewPager) this.findViewById(R.id.pager1);
-        this._viewPager.setAdapter(this._fragmentPagerAdapter);
-        this._viewPager.setCurrentItem(0);
-        // Set the default fragment.
-        this.openFragment(0);
-
-    }
-    /**
-     * Open the specified fragment.
-     * @param fragment
-     */
-    public void openFragment(final int fragment) {
-        this._viewPager.setCurrentItem(fragment);
-    }
-
-    /**
-     * Get the fragment object for the specified fragment.
-     * @param fragment
-     * @return
-     */
-    public Fragment getFragment(final int fragment) {
-        return this._fragments.get(fragment);
-    }
-
 }
 
