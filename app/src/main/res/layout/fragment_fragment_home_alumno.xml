@@ -1,12 +1,13 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="applicate.com.sigma.applicate.FragmentHomeAlumno">
-
 
     <LinearLayout
         android:id="@+id/header"
+
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="#00FF00"
@@ -27,26 +28,116 @@
             android:text="@string/nom"
             android:textSize="40sp" />
 
-
-
-            <ImageView
-                android:layout_gravity="center"
-                android:layout_width="54dp"
-                android:layout_height="40dp"
-                android:contentDescription="check_assist"
-                android:src="@drawable/checkok"
-                android:layout_weight="0.43" />
-
-
-
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.43"
+            android:contentDescription="check_assist"
+            android:src="@drawable/checkok" />
     </LinearLayout>
 
     <LinearLayout
+        android:background="#00FFF0"
+        android:gravity="center"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        android:orientation="vertical"
-        >
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/botonNotificaciones"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/holo_purple"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user_default"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="30dp"
+                android:text="@string/notificar"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/botonBuscar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:background="@android:color/holo_purple"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user_default"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="30dp"
+                android:text="@string/buscar"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/botonEstadisticas"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:background="@android:color/holo_purple"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:gravity="left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user_default"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="30dp"
+                android:text="@string/estadisticas"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
     </LinearLayout>
-
-
-</FrameLayout>
+</LinearLayout>
