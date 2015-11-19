@@ -24,7 +24,7 @@
             android:contentDescription="foto"
             android:src="@drawable/java" />
     <LinearLayout
-        android:layout_width="227dp"
+        android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center">
