@@ -36,6 +36,8 @@ public class HomeProfesorFragment extends Fragment implements View.OnClickListen
 
         ImageButton botonCrearNotificaciones = (ImageButton) rootView.findViewById(R.id.buttonMenuNotificaciones);
         botonCrearNotificaciones.setOnClickListener(this);
+        ImageButton botonBuscar = (ImageButton) rootView.findViewById(R.id.buttonMenuBuscar);
+        botonBuscar.setOnClickListener(this);
 
 
         List<Alumno> listAlumnos = new ArrayList<>();
@@ -81,7 +83,16 @@ public class HomeProfesorFragment extends Fragment implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(getContext(),ActivityCrearNotificacion.class);
-        startActivity(intent);
+        switch (v.getId()) {
+            case R.id.buttonMenuNotificaciones:
+                Intent intent = new Intent(getContext(),ActivityCrearNotificacion.class);
+                startActivity(intent);
+                break;
+            case R.id.buttonMenuBuscar:
+                Intent intent2 = new Intent(getContext(),BuscarActivity.class);
+                startActivity(intent2);
+                break;
+        }
+
     }
 }
