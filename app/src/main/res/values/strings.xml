@@ -4,6 +4,8 @@
     <string name="button_send">Cambiar activity</string>
     <string name="nom">Oriol Mora</string>
     <string name="buscar">Buscar</string>
+    <string name="buscarNombre">Buscar por nombre:</string>
+    <string name="buscarAula">Buscar por aula:</string>
     <string name="notificar">Notificar</string>
     <string name="estadisticas">Estadisticas</string>
     <string name="assignatura">Java</string>
@@ -20,4 +22,5 @@
     <string name="title_activity_activity_crear_notificacion">ActivityCrearNotificacion</string>
     <string name="title_activity_prueba">PRUEBA</string>
     <string name="aula">A-37</string>
+    <string name="title_activity_buscar">BuscarActivity</string>
 </resources>

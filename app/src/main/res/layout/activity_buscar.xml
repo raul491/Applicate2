@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="applicate.com.sigma.applicate.ActivityCrearNotificacion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textAlumno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/buscarNombre"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/inputBuscarAlumno"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Ejemplo: Oriol Mora" />
+
+        <TextView
+            android:id="@+id/textAula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/buscarAula"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/inputAula"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Ejemplo: Aula 17" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="190dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#476DD5"
+        android:gravity="center"
+        android:id="@+id/buscarButton"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+           android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="35dp"
+            android:layout_height="38dp"
+            android:src="@android:drawable/ic_search_category_default" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buscar"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="3dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+

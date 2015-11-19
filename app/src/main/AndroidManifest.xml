@@ -20,6 +20,10 @@
             android:name=".ActivityCrearNotificacion"
             android:label="@string/title_activity_activity_crear_notificacion" >
         </activity>
+        <activity
+            android:name=".BuscarActivity"
+            android:label="@string/title_activity_buscar" >
+        </activity>
     </application>
 
 </manifest>
