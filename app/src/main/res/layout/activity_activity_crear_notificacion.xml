@@ -92,13 +92,13 @@
             android:layout_gravity="center_vertical"
             android:layout_marginBottom="5dp"
             android:ems="10"
-            android:inputType="time"
+            android:inputType="text"
             android:text="@string/descripcion" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="45dp"
+        android:layout_height="43dp"
         android:layout_marginTop="360dp"
         android:background="#65afff">
 
@@ -106,7 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/enviar"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="2dp"
             android:textSize="30dp"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="3dp"
@@ -115,7 +115,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/ab_icon_send"
-            android:layout_marginTop="3dp"/>
+            android:layout_marginTop="1dp"/>
     </LinearLayout>
 
 </RelativeLayout>
