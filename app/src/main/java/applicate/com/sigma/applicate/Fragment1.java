@@ -2,6 +2,7 @@ package applicate.com.sigma.applicate;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,18 +32,18 @@ public class Fragment1 extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         int idV=v.getId();
 
-        if (idV == R.id.button1) {
-            Toast.makeText(getContext(), "PROVA", Toast.LENGTH_LONG).show();
-        } else {
-            Toast.makeText(getContext(), "PROVA2", Toast.LENGTH_LONG).show();
-        }
-
-
 
         switch (idV){
             case R.id.button1:
-
+                    goNextFragment();
                 break;
         }
+    }
+
+    private void goNextFragment() {
+        final FragmentTransaction ft = getFragmentManager().beginTransaction();
+        ft.replace(R.id.fragment_container, new Fragment_2(), "fragment2");
+        ft.commit();
+
     }
 }

@@ -35,7 +35,8 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
             }
 
             // Create a new Fragment to be placed in the activity layout
-            Fragment firstFragment = new Fragment1();
+            Fragment firstFragment2 = new Fragment1();
+            Fragment firstFragment = new HomeProfesorFragment();
 
             // In case this activity was started with special instructions from an
             // Intent, pass the Intent's extras to the fragment as arguments
@@ -48,8 +49,6 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
 
 
 
-        //Button button= (Button) findViewById(R.id.button1);
-        //button.setOnClickListener(this);
     }
 
     @Override
