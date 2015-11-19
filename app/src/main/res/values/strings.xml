@@ -23,4 +23,5 @@
     <string name="title_activity_prueba">PRUEBA</string>
     <string name="aula">A-37</string>
     <string name="title_activity_buscar">BuscarActivity</string>
+    <string name="title_activity_activity_grafico">Grafico</string>
 </resources>
