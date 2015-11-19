@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Applicate</string>
+    <string name="nom_alumne">Alumno 1</string>
+    <string name="button_send">Cambiar activity</string>
     <string name="nom">Oriol Mora</string>
     <string name="buscar">Buscar</string>
     <string name="notificar">Notificar</string>

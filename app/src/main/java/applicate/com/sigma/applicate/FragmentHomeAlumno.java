@@ -23,6 +23,4 @@ public class FragmentHomeAlumno extends Fragment {
         return inflater.inflate(R.layout.fragment_fragment_home_alumno, container, false);
     }
 
-
-
 }
