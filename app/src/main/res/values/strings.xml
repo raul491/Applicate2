@@ -4,7 +4,6 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-<<<<<<< Updated upstream
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="crear_notificacion_titulo">Crear notificación</string>
@@ -15,10 +14,7 @@
     <string name="horaInicial">Hora inicial:</string>
     <string name="dia">Dia:</string>
     <string name="title_activity_activity_crear_notificacion">ActivityCrearNotificacion</string>
-</resources>
-=======
     <string name="title_activity_prueba">PRUEBA</string>
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>
->>>>>>> Stashed changes
+

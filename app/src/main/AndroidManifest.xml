@@ -17,13 +17,8 @@
             </intent-filter>
         </activity>
         <activity
-<<<<<<< Updated upstream
             android:name=".ActivityCrearNotificacion"
             android:label="@string/title_activity_activity_crear_notificacion" >
-=======
-            android:name=".prueba"
-            android:label="@string/title_activity_prueba" >
->>>>>>> Stashed changes
         </activity>
     </application>
 
