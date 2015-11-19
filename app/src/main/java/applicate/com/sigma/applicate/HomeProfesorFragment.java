@@ -1,5 +1,6 @@
 package applicate.com.sigma.applicate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -7,11 +8,13 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeProfesorFragment extends Fragment {
+public class HomeProfesorFragment extends Fragment implements View.OnClickListener {
 
 
     @Override
@@ -30,6 +33,10 @@ public class HomeProfesorFragment extends Fragment {
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());
         rv.setLayoutManager(llm
         );
+
+        ImageButton botonCrearNotificaciones = (ImageButton) rootView.findViewById(R.id.buttonMenuNotificaciones);
+        botonCrearNotificaciones.setOnClickListener(this);
+
 
         List<Alumno> listAlumnos = new ArrayList<>();
 
@@ -70,4 +77,9 @@ public class HomeProfesorFragment extends Fragment {
     }
 
 
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(getContext(),ActivityCrearNotificacion.class);
+        startActivity(intent);
+    }
 }
