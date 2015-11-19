@@ -70,7 +70,9 @@ public class HomeProfesorFragment extends Fragment implements View.OnClickListen
         listAlumnos.add(a13);
 
         AdaptadorListaAlumnos adaptador = new AdaptadorListaAlumnos(listAlumnos);
+
         rv.setAdapter(adaptador);
+        adaptador.setControl(true);
 
         return rootView;
 
