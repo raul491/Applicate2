@@ -24,9 +24,11 @@ public class FragmentHomeAlumno extends Fragment implements View.OnClickListener
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_fragment_home_alumno, container, false);
         LinearLayout botonNotificaciones = (LinearLayout) rootView.findViewById(R.id.botonNotificaciones);
-        /*LinearLayout botonBuscar = (LinearLayout) rootView.findViewById(R.id.botonBuscar);
-        LinearLayout botonEstadisticas = (LinearLayout) rootView.findViewById(R.id.botonEstadisticas);*/
+        LinearLayout botonBuscar = (LinearLayout) rootView.findViewById(R.id.botonBuscar);
+        /*LinearLayout botonEstadisticas = (LinearLayout) rootView.findViewById(R.id.botonEstadisticas);*/
         botonNotificaciones.setOnClickListener(this);
+        botonBuscar.setOnClickListener(this);
+        //botonEstadisticas.setOnClickListener(this);
         return inflater.inflate(R.layout.fragment_fragment_home_alumno, container, false);
     }
 
@@ -36,9 +38,9 @@ public class FragmentHomeAlumno extends Fragment implements View.OnClickListener
         switch(v.getId()){
             case R.id.botonNotificaciones: intent = new Intent(getContext(),ActivityCrearNotificacion.class);
                 break;
-            /*case R.id.botonBuscar: intent = new Intent(getContext(), BuscarActivity.class);
+            case R.id.botonBuscar: intent = new Intent(getContext(), BuscarActivity.class);
                 break;
-            case R.id.botonEstadisticas: intent = new Intent(getContext(), ActivityGrafico.class);
+            /*case R.id.botonEstadisticas: intent = new Intent(getContext(), ActivityGrafico.class);
                 break;*/
         }
         startActivity(intent);
