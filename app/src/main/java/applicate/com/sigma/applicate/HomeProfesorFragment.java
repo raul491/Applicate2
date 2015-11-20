@@ -38,6 +38,8 @@ public class HomeProfesorFragment extends Fragment implements View.OnClickListen
         botonCrearNotificaciones.setOnClickListener(this);
         ImageButton botonBuscar = (ImageButton) rootView.findViewById(R.id.buttonMenuBuscar);
         botonBuscar.setOnClickListener(this);
+        ImageButton botonEstadisticas= (ImageButton) rootView.findViewById(R.id.buttonMenuEstadisticas);
+        botonEstadisticas.setOnClickListener(this);
 
 
         List<Alumno> listAlumnos = new ArrayList<>();
@@ -91,6 +93,10 @@ public class HomeProfesorFragment extends Fragment implements View.OnClickListen
             case R.id.buttonMenuBuscar:
                 Intent intent2 = new Intent(getContext(),BuscarActivity.class);
                 startActivity(intent2);
+                break;
+            case R.id.buttonMenuEstadisticas:
+                Intent intent3 = new Intent(getContext(),ActivityGrafico.class);
+                startActivity(intent3);
                 break;
         }
 

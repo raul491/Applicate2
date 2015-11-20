@@ -72,7 +72,7 @@ public class AdaptadorListaAlumnos extends RecyclerView.Adapter<AdaptadorListaAl
     @Override
     public AlumnoViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View rootView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.row_alumno, viewGroup, false);
-        AlumnoViewHolder avh = new AlumnoViewHolder(rootView, this);
+        AlumnoViewHolder avh = new AlumnoViewHolder(rootView, this,i,items);
 
         position = i;
         return avh;
@@ -111,16 +111,22 @@ public class AdaptadorListaAlumnos extends RecyclerView.Adapter<AdaptadorListaAl
     public static class AlumnoViewHolder extends RecyclerView.ViewHolder implements CompoundButton.OnCheckedChangeListener {
 
         private final AdaptadorListaAlumnos adapter;
+        private final int position;
+        private final List<Alumno> items;
         ImageView image;
         TextView nombre;
         TextView apellido1;
         TextView apellido2;
         CheckBox checkbox;
         LinearLayout linearLayoutRowMenu;
+        private Alumno alumno;
 
-        public AlumnoViewHolder(View itemView, AdaptadorListaAlumnos adaptadorListaAlumnos) {
+        public AlumnoViewHolder(View itemView, AdaptadorListaAlumnos adaptadorListaAlumnos,
+                                int position, List<Alumno> items) {
             super(itemView);
             this.adapter = adaptadorListaAlumnos;
+            this.position=position;
+            this.items=items;
             image = (ImageView) itemView.findViewById(R.id.listaAlumnosImagen);
             nombre = (TextView) itemView.findViewById(R.id.listaAlumnosNombre);
             apellido1 = (TextView) itemView.findViewById(R.id.listaAlumnosApellido1);
@@ -128,22 +134,29 @@ public class AdaptadorListaAlumnos extends RecyclerView.Adapter<AdaptadorListaAl
             checkbox = (CheckBox) itemView.findViewById(R.id.listaAlumnosCheckBox);
             linearLayoutRowMenu = (LinearLayout) itemView.findViewById(R.id.linearLayoutRowMenu);
             checkbox.setOnCheckedChangeListener(this);
+
         }
 
 
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+            alumno=items.get(position);
             if (isChecked) {
                 linearLayoutRowMenu.setBackgroundColor(Color.rgb(229, 255, 229));
+
+                alumno.setStatus("dentro");
                 Log.v("prova", Boolean.toString(adapter.control));
                 if (!adapter.control) {
                     //adapter.notifyDataSetChanged();
                 }
             } else {
                 linearLayoutRowMenu.setBackgroundColor(Color.rgb(255, 179, 179));
+                alumno.setStatus("fuera");
+
                 Log.v("prova", Boolean.toString(adapter.control));
+
                 if (!adapter.control) {
-                    //adapter.notifyDataSetChanged();
+                    //
                 }
             }
 
