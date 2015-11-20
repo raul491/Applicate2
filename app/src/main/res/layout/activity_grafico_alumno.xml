@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dip"
             app:seriesColor="#ee0000"
-            app:seriesData="0=5;2=5;3=0;4=2"
+            app:seriesData="0=5;2=8;4=3;6=6;8=7"
             app:seriesType="bar" />
     </LinearLayout>
 
