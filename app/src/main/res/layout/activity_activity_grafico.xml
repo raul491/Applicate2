@@ -16,12 +16,15 @@
         <!--android:adjustViewBounds="true"-->
         <!--android:contentDescription="logo"-->
         <!--android:src="@drawable/graphic" />-->
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
     <com.jjoe64.graphview.helper.GraphViewXML
         android:layout_width="match_parent"
         android:layout_height="100dip"
         app:seriesData="0=3;2=5;3=0;4=2;8=6;9=1"
         app:seriesType="line"
         app:seriesColor="#ee0000" />
-
+     </LinearLayout>
 </RelativeLayout>
