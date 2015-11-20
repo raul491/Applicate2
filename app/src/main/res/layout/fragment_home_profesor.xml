@@ -14,23 +14,27 @@
         <ImageButton
             android:id="@+id/buttonMenuNotificaciones"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="37dp"
+
             android:layout_weight=".30"
-            android:src="@android:drawable/ic_menu_edit" />
+            android:background="#97C1CF"
+            android:src="@drawable/edit24" />
 
         <ImageButton
             android:id="@+id/buttonMenuBuscar"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:background="#97C1CF"
+            android:layout_height="37dp"
             android:layout_weight=".30"
-            android:src="@android:drawable/ic_menu_search" />
+            android:src="@drawable/bsearch24" />
 
         <ImageButton
             android:id="@+id/buttonMenuEstadisticas"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="37dp"
             android:layout_weight=".30"
-            android:src="@android:drawable/ic_menu_info_details" />
+            android:background="#97C1CF"
+            android:src="@drawable/statistic24" />
     </LinearLayout>
 
     <LinearLayout
