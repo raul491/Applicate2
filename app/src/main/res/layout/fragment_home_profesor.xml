@@ -15,6 +15,7 @@
             android:id="@+id/buttonMenuNotificaciones"
             android:layout_width="0dp"
             android:layout_height="37dp"
+            android:layout_marginRight="1dp"
 
             android:layout_weight=".30"
             android:background="#97C1CF"
@@ -24,6 +25,7 @@
             android:id="@+id/buttonMenuBuscar"
             android:layout_width="0dp"
             android:background="#97C1CF"
+            android:layout_marginRight="1dp"
             android:layout_height="37dp"
             android:layout_weight=".30"
             android:src="@drawable/bsearch24" />
