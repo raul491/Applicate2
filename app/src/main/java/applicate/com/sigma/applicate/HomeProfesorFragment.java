@@ -59,7 +59,7 @@ public class HomeProfesorFragment extends Fragment implements View.OnClickListen
         Alumno a8 = new Alumno("Nombre", "Ap 1", "Ap 2", "dentro", "");
         Alumno a9 = new Alumno("Nombre", "Ap 1", "Ap 2", "dentro", "");
         Alumno a10 = new Alumno("Nombre", "Ap 1", "Ap 2", "fuera", "");
-        Alumno a11 = new Alumno("Nombre", "Ap 1", "Ap2", "fuera", "");
+        Alumno a11 = new Alumno("Nombre", "Ap 1", "Ap 2", "fuera", "");
         Alumno a12 = new Alumno("Nombre", "Ap 1", "Ap 2", "fuera", "");
         Alumno a13 = new Alumno("Nombre", "Ap 1", "Ap 2", "ausencia", "");
 
