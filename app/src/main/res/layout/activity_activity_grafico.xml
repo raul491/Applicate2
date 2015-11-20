@@ -9,13 +9,13 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="applicate.com.sigma.applicate.ActivityGrafico">
 
-    <ImageView
-        android:layout_width="1200dp"
-        android:layout_height="1500dp"
-        android:layout_gravity="center"
-        android:adjustViewBounds="true"
-        android:contentDescription="logo"
-        android:src="@drawable/graphic" />
+    <!--<ImageView-->
+        <!--android:layout_width="1200dp"-->
+        <!--android:layout_height="1500dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:contentDescription="logo"-->
+        <!--android:src="@drawable/graphic" />-->
 
     <com.jjoe64.graphview.helper.GraphViewXML
         android:layout_width="match_parent"
