@@ -10,7 +10,7 @@
 android:gravity="center"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#476DD5"
+        android:background="#97C1CF"
         android:orientation="horizontal"
         >
 
@@ -79,7 +79,7 @@ android:gravity="center"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="#476DD5"
+            android:background="#97C1CF"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
 
@@ -110,7 +110,7 @@ android:gravity="center"
             android:layout_height="wrap_content"
 
             android:orientation="horizontal"
-            android:background="#476DD5"
+            android:background="#97C1CF"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
@@ -142,7 +142,7 @@ android:gravity="center"
             android:layout_height="wrap_content"
 
             android:orientation="horizontal"
-            android:background="#476DD5"
+            android:background="#97C1CF"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             >
@@ -168,12 +168,12 @@ android:gravity="center"
 
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/botonBuscar"
+            android:id="@+id/botonLogout"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
 
             android:orientation="horizontal"
-            android:background="#476DD5"
+            android:background="#97C1CF"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"

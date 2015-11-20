@@ -1,6 +1,8 @@
 package applicate.com.sigma.applicate;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -27,10 +29,18 @@ public class FragmentHomeAlumno extends Fragment implements View.OnClickListener
         LinearLayout botonNotificaciones = (LinearLayout) rootView.findViewById(R.id.botonNotificaciones);
         LinearLayout botonBuscar = (LinearLayout) rootView.findViewById(R.id.botonBuscar);
         LinearLayout botonEstadisticas = (LinearLayout) rootView.findViewById(R.id.botonEstadisticas);
+        LinearLayout botonLogout = (LinearLayout) rootView.findViewById(R.id.botonLogout);
         botonNotificaciones.setOnClickListener(this);
         botonBuscar.setOnClickListener(this);
         botonEstadisticas.setOnClickListener(this);
         return rootView;
+    }
+    public void borrarTipo() {
+        SharedPreferences prefs = getContext().getSharedPreferences(FragmentLogin.CONFIGURACION,
+                Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("tipo", "");
+        editor.commit();
     }
 
     @Override
@@ -44,6 +54,11 @@ public class FragmentHomeAlumno extends Fragment implements View.OnClickListener
                 break;
             case R.id.botonEstadisticas: intent = new Intent(getContext(), ActivityGrafico.class);
                 break;
+            case R.id.botonLogout:
+                borrarTipo();
+                intent = new Intent (getContext(), HomeActivity.class);
+                break;
+
         }
         startActivity(intent);
     }
