@@ -10,7 +10,7 @@ public class GraficoAlumno extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_activity_grafico);
+        setContentView(R.layout.activity_grafico_alumno);
     }
 
     @Override
