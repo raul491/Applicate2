@@ -19,7 +19,7 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeActivity extends FragmentActivity implements View.OnClickListener {
+public class HomeActivity extends FragmentActivity  {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,25 +64,6 @@ public class HomeActivity extends FragmentActivity implements View.OnClickListen
 
 
 
-    }
-
-    @Override
-    public void onClick(View v) {
-        int idV=v.getId();
-
-        if (idV == R.id.button1) {
-            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();;
-
-            Fragment newFragment = new Fragment_2();
-
-// Replace whatever is in the fragment_container view with this fragment,
-// and add the transaction to the back stack so the user can navigate back
-            transaction.replace(R.id.fragment_container, newFragment);
-            transaction.addToBackStack(null);
-
-// Commit the transaction
-            transaction.commit();
-        }
     }
 }
 
