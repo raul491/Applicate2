@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:id="@+id/header"
-android:gravity="center"
+        android:gravity="center"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="#97C1CF"
@@ -43,7 +43,6 @@ android:gravity="center"
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
-
             android:textColor="#FFFFFF"
             android:gravity="center"
             android:text="@string/aula"
