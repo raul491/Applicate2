@@ -28,6 +28,10 @@
             android:name=".BuscarActivity"
             android:label="@string/title_activity_buscar" >
         </activity>
+        <activity
+            android:name=".GraficoAlumno"
+            android:label="@string/title_activity_grafico_alumno" >
+        </activity>
     </application>
 
 </manifest>

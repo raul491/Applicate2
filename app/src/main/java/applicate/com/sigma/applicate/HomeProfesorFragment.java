@@ -20,7 +20,7 @@ public class HomeProfesorFragment extends Fragment implements View.OnClickListen
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setHasOptionsMenu(true);
 
     }
 
@@ -33,6 +33,7 @@ public class HomeProfesorFragment extends Fragment implements View.OnClickListen
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());
         rv.setLayoutManager(llm
         );
+
 
         ImageButton botonCrearNotificaciones = (ImageButton) rootView.findViewById(R.id.buttonMenuNotificaciones);
         botonCrearNotificaciones.setOnClickListener(this);
@@ -78,6 +79,8 @@ public class HomeProfesorFragment extends Fragment implements View.OnClickListen
         rv.setAdapter(adaptador);
         adaptador.setControl(true);
 
+
+        setHasOptionsMenu(true);
         return rootView;
 
     }

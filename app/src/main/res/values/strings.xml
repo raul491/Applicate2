@@ -19,10 +19,10 @@
     <string name="horaFinal">Hora final:</string>
     <string name="horaInicial">Hora inicial:</string>
     <string name="dia">Dia:</string>
-    <string name="title_activity_activity_crear_notificacion">ActivityCrearNotificacion</string>
+    <string name="title_activity_activity_crear_notificacion">Crear Notificacion</string>
     <string name="title_activity_prueba">PRUEBA</string>
     <string name="aula">A-37</string>
-    <string name="title_activity_buscar">BuscarActivity</string>
+    <string name="title_activity_buscar">Buscar Activity</string>
     <string name="title_activity_activity_grafico">Grafico</string>
-    <string name="title_activity_grafico_alumno">GraficoAlumno</string>
+    <string name="title_activity_grafico_alumno">Grafico Alumno</string>
 </resources>
