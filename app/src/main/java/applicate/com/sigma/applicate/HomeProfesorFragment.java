@@ -49,19 +49,19 @@ public class HomeProfesorFragment extends Fragment implements View.OnClickListen
         List<Alumno> listAlumnos = new ArrayList<>();
 
 
-        Alumno a1 = new Alumno("Nombre", "Apellido 1", "Apellido 2", "dentro", "");
-        Alumno a2 = new Alumno("Nombre", "Apellido 1", "Apellido 2", "dentro", "");
-        Alumno a3 = new Alumno("Nombre", "Apellido 1", "Apellido 2", "dentro", "");
-        Alumno a4 = new Alumno("Nombre", "Apellido 1", "Apellido 2", "dentro", "");
-        Alumno a5 = new Alumno("Nombre", "Apellido 1", "Apellido 2", "dentro", "");
-        Alumno a6 = new Alumno("Nombre", "Apellido 1", "Apellido 2", "dentro", "");
-        Alumno a7 = new Alumno("Nombre", "Apellido 1", "Apellido 2", "dentro", "");
-        Alumno a8 = new Alumno("Nombre", "Apellido 1", "Apellido 2", "dentro", "");
-        Alumno a9 = new Alumno("Nombre", "Apellido 1", "Apellido 2", "dentro", "");
-        Alumno a10 = new Alumno("Nombre", "Apellido 1", "Apellido 2", "fuera", "");
-        Alumno a11 = new Alumno("Nombre", "Apellido 1", "Apellido 2", "fuera", "");
-        Alumno a12 = new Alumno("Nombre", "Apellido 1", "Apellido 2", "fuera", "");
-        Alumno a13 = new Alumno("Nombre", "Apellido 1", "Apellido 2", "ausencia", "");
+        Alumno a1 = new Alumno("Nombre", "Ap 1", "Ap 2", "dentro", "");
+        Alumno a2 = new Alumno("Nombre", "Ap 1", "Ap 2", "dentro", "");
+        Alumno a3 = new Alumno("Nombre", "Ap 1", "Ap 2", "dentro", "");
+        Alumno a4 = new Alumno("Nombre", "Ap 1", "Ap 2", "dentro", "");
+        Alumno a5 = new Alumno("Nombre", "Ap 1", "Ap 2", "dentro", "");
+        Alumno a6 = new Alumno("Nombre", "Ap 1", "Ap 2", "dentro", "");
+        Alumno a7 = new Alumno("Nombre", "Ap 1", "Ap 2", "dentro", "");
+        Alumno a8 = new Alumno("Nombre", "Ap 1", "Ap 2", "dentro", "");
+        Alumno a9 = new Alumno("Nombre", "Ap 1", "Ap 2", "dentro", "");
+        Alumno a10 = new Alumno("Nombre", "Ap 1", "Ap 2", "fuera", "");
+        Alumno a11 = new Alumno("Nombre", "Ap 1", "Ap2", "fuera", "");
+        Alumno a12 = new Alumno("Nombre", "Ap 1", "Ap 2", "fuera", "");
+        Alumno a13 = new Alumno("Nombre", "Ap 1", "Ap 2", "ausencia", "");
 
         listAlumnos.add(a1);
         listAlumnos.add(a2);
