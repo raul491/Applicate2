@@ -89,7 +89,7 @@ android:gravity="center"
                 android:layout_marginLeft="30dp"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/user_default"
+                android:src="@drawable/new24128"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"/>
 
@@ -121,7 +121,7 @@ android:gravity="center"
                 android:layout_marginLeft="30dp"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/user_default"
+                android:src="@drawable/search128"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"/>
 
@@ -152,7 +152,7 @@ android:gravity="center"
                 android:gravity="left"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/user_default"
+                android:src="@drawable/statistic128"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"/>
 
@@ -167,7 +167,38 @@ android:gravity="center"
                 />
 
         </LinearLayout>
+        <LinearLayout
+            android:id="@+id/botonBuscar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
 
+            android:orientation="horizontal"
+            android:background="#476DD5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logout"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>x
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="30dp"
+                android:text="Log-Out"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
 
 
     </LinearLayout>
