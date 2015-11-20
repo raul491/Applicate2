@@ -33,6 +33,7 @@ public class FragmentHomeAlumno extends Fragment implements View.OnClickListener
         botonNotificaciones.setOnClickListener(this);
         botonBuscar.setOnClickListener(this);
         botonEstadisticas.setOnClickListener(this);
+        botonLogout.setOnClickListener(this);
         return rootView;
     }
     public void borrarTipo() {
@@ -52,7 +53,7 @@ public class FragmentHomeAlumno extends Fragment implements View.OnClickListener
                 break;
             case R.id.botonBuscar: intent = new Intent(getContext(), BuscarActivity.class);
                 break;
-            case R.id.botonEstadisticas: intent = new Intent(getContext(), ActivityGrafico.class);
+            case R.id.botonEstadisticas: intent = new Intent(getContext(), GraficoAlumno.class);
                 break;
             case R.id.botonLogout:
                 borrarTipo();
