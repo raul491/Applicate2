@@ -14,7 +14,7 @@
         <ImageButton
             android:id="@+id/buttonMenuNotificaciones"
             android:layout_width="0dp"
-            android:layout_height="37dp"
+            android:layout_height="55dp"
             android:layout_marginRight="1dp"
 
             android:layout_weight=".30"
@@ -26,18 +26,27 @@
             android:layout_width="0dp"
             android:background="#97C1CF"
             android:layout_marginRight="1dp"
-            android:layout_height="37dp"
+            android:layout_height="55dp"
             android:layout_weight=".30"
             android:src="@drawable/bsearch24" />
 
         <ImageButton
             android:id="@+id/buttonMenuEstadisticas"
             android:layout_width="0dp"
-            android:layout_height="37dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="1dp"
             android:layout_weight=".30"
             android:background="#97C1CF"
             android:src="@drawable/statistic24" />
+        <ImageButton
+            android:id="@+id/buttonLogout"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight=".30"
+            android:background="#97C1CF"
+            android:src="@drawable/blogout24" />
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"

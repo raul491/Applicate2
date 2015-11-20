@@ -1,6 +1,8 @@
 package applicate.com.sigma.applicate;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -41,7 +43,8 @@ public class HomeProfesorFragment extends Fragment implements View.OnClickListen
         botonBuscar.setOnClickListener(this);
         ImageButton botonEstadisticas= (ImageButton) rootView.findViewById(R.id.buttonMenuEstadisticas);
         botonEstadisticas.setOnClickListener(this);
-
+        ImageButton botonLogout= (ImageButton) rootView.findViewById(R.id.buttonLogout);
+        botonLogout.setOnClickListener(this);
 
         List<Alumno> listAlumnos = new ArrayList<>();
 
@@ -84,7 +87,13 @@ public class HomeProfesorFragment extends Fragment implements View.OnClickListen
         return rootView;
 
     }
-
+    public void borrarTipo() {
+        SharedPreferences prefs = getContext().getSharedPreferences(FragmentLogin.CONFIGURACION,
+                Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("tipo", "");
+        editor.commit();
+    }
 
     @Override
     public void onClick(View v) {
@@ -101,6 +110,12 @@ public class HomeProfesorFragment extends Fragment implements View.OnClickListen
                 Intent intent3 = new Intent(getContext(),ActivityGrafico.class);
                 startActivity(intent3);
                 break;
+            case R.id.buttonLogout:
+                borrarTipo();
+                Intent intent4 = new Intent(getContext(),HomeActivity.class);
+                startActivity(intent4);
+                break;
+
         }
 
     }
