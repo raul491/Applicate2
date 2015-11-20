@@ -17,6 +17,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.lang.reflect.Array;
+
 public class FragmentLogin extends Fragment implements View.OnClickListener {
 
     public static final String CONFIGURACION = "configuracionApplicate";
@@ -70,6 +72,8 @@ public class FragmentLogin extends Fragment implements View.OnClickListener {
             final FragmentTransaction ft = getFragmentManager().beginTransaction();
             ft.replace(R.id.fragment_container, new HomeProfesorFragment(), "fragment_profe");
             ft.commit();
+        } else {
+            Toast.makeText(getContext(), "Login incorrecto",Toast.LENGTH_LONG).show();
         }
     }
 
