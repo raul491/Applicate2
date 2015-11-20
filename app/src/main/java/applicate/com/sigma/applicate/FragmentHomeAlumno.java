@@ -60,6 +60,7 @@ public class FragmentHomeAlumno extends Fragment implements View.OnClickListener
             case R.id.botonLogout:
                 borrarTipo();
                 intent = new Intent (getContext(), HomeActivity.class);
+                this.getActivity().finish();
                 break;
 
         }

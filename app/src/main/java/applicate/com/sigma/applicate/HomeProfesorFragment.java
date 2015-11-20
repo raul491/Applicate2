@@ -114,6 +114,7 @@ public class HomeProfesorFragment extends Fragment implements View.OnClickListen
                 borrarTipo();
                 Intent intent4 = new Intent(getContext(),HomeActivity.class);
                 startActivity(intent4);
+                this.getActivity().finish();
                 break;
 
         }
