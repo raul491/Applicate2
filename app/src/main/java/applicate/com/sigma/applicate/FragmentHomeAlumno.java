@@ -49,21 +49,28 @@ public class FragmentHomeAlumno extends Fragment implements View.OnClickListener
     @Override
     public void onClick(View v) {
 
-        Intent intent = null;
+
         switch(v.getId()){
-            case R.id.botonNotificaciones: intent = new Intent(getContext(),ActivityCrearNotificacion.class);
+            case R.id.botonNotificaciones:
+                Intent intent = new Intent(getContext(),ActivityCrearNotificacion.class);
+                startActivity(intent);
                 break;
-            case R.id.botonBuscar: intent = new Intent(getContext(), BuscarActivity.class);
+            case R.id.botonBuscar:
+                Intent intent2 = new Intent(getContext(), BuscarActivity.class);
+                startActivity(intent2);
                 break;
-            case R.id.botonEstadisticas: intent = new Intent(getContext(), GraficoAlumno.class);
+            case R.id.botonEstadisticas:
+                Intent intent3 = new Intent(getContext(), GraficoAlumno.class);
+                startActivity(intent3);
                 break;
             case R.id.botonLogout:
                 borrarTipo();
-                intent = new Intent (getContext(), HomeActivity.class);
+                Intent intent4 = new Intent (getContext(), HomeActivity.class);
+                startActivity(intent4);
                 this.getActivity().finish();
                 break;
 
         }
-        startActivity(intent);
+
     }
 }
